@@ -36,8 +36,6 @@ Capturas del montaje en laboratorio sobre protoboard y video de verificación de
 | HC-SR04 | Echo | Pin 9 | Recepción del eco (`INPUT`) |
 | HC-SR04 | GND | GND | Tierra común |
 | LED | Ánodo (+) | Pin 8 | Salida digital vía resistencia 220 Ω (`OUTPUT`) |
-| LED | Cátodo (-) | GND | Tierra común |
-
 
 
 
