@@ -6,11 +6,14 @@ Este proyecto implementa un sistema de medición de distancia en tiempo real uti
 
 ## 📂 Estructura del Repositorio
 
-* **`codigo/`** — Contiene el archivo de código fuente `.ino` para Arduino UNO.
-* **`simulacion/`** — Captura de pantalla del circuito funcionando en Tinkercad.
-* **`fotos/`** — Evidencias fotográficas del montaje físico del circuito.
-* **`README.md`** — Documentación principal del proyecto.
+Para revisar el código fuente, el circuito interactivo y las evidencias del montaje físico, selecciona las siguientes carpetas:
 
+* **[Código Fuente (.ino)](/codigo/)**  
+Script en C++ cargado en la placa Arduino (`distancia.ino`) con comentarios explicativos de la lógica de control.
+* **[Simulación en Tinkercad](/simulacion/)**  
+Esquema del circuito en entorno simulado y enlace interactivo al proyecto de Tinkercad.
+* **[Evidencias Físicas y Video](/fotos/)**  
+Capturas del montaje en laboratorio sobre protoboard y video de verificación del funcionamiento en tiempo real.
 
 
 ##  Materiales Utilizados
@@ -37,17 +40,21 @@ Este proyecto implementa un sistema de medición de distancia en tiempo real uti
 
 
 
+
 ##  Explicación Técnica de la Lógica
 
 1. **Cálculo de Distancia:**
-El sensor emite un pulso de ultrasonido mediante el pin `Trig` durante 10 $\mu\text{s}$. El pin `Echo` mide el tiempo que tarda la onda en rebotar y regresar. Utilizando la velocidad del sonido en el aire ($0.0343\text{ cm/}\mu\text{s}$), se divide entre 2 para calcular la trayectoria de ida:
 
 
+El sensor HC-SR04 genera un pulso ultrasónico de $40\text{ kHz}$ cuando el pin `Trig` recibe un pulso en alto de $10\ \mu\text{s}$. El pulso viaja por el aire, rebota en un objeto y regresa al sensor, activando el pin `Echo`.
+
+Sabiendo que la velocidad del sonido a nivel del mar es aproximadamente $343\text{ m/s}$ ($0.0343\text{ cm/}\mu\text{s}$), y que el pulso recorre una trayectoria de ida y vuelta, la distancia se calcula según la fórmula:
 
 $$\text{Distancia} = \frac{\text{Duración} \times 0.0343}{2}$$
 
 
-2. **Mecanismo Anti-Repetición:**
+2. **Mecanismo Anti-Repetición:**  
+      
 Para evitar que el LED parpadee constantemente mientras el objeto está estático frente al sensor, se usa la variable booleana `objetoDetectado`:
 
 
@@ -58,3 +65,24 @@ Para evitar que el LED parpadee constantemente mientras el objeto está estátic
 
 
 * Solo al salir de la zona ($\ge 10\text{ cm}$), se reestablece `objetoDetectado = false`, habilitando la detección para un nuevo evento.
+
+
+
+## Autores:  
+
+**Estudiantes:**
+
+* Alberto Fandino
+* Camilo Martinez
+* Martin Castro
+* Sebastian De Luque
+* Sebastian Martinez
+* Steven Santamaria
+
+
+**Asignatura:**
+* Fundamentos de Mecatrónica
+
+
+**Institución:**    
+* Corporación Universitaria Americana
