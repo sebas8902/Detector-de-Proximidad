@@ -30,4 +30,4 @@ Para validar el funcionamiento del circuito antes del montaje en físico, se rec
 
 ## Esquema del Circuito
 
-![Simulación Tinkercad](./Simulacion/esquematico_tinkercad.png)
+![Simulación Tinkercad](./esquematico.png)
