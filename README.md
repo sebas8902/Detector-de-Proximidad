@@ -76,6 +76,7 @@ Para evitar que el LED parpadee constantemente mientras el objeto está estátic
 * Sebastian De Luque
 * Sebastian Martinez
 * Steven Santamaria
+* Yeimer Ortiz
 
 
 **Asignatura:**
