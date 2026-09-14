@@ -8,9 +8,9 @@ Este proyecto implementa un sistema de medición de distancia en tiempo real uti
 
 Para revisar el código fuente, el circuito interactivo y las evidencias del montaje físico, selecciona las siguientes carpetas:
 
-* **[Código Fuente (.ino)](/codigo/)**  
+* **[Código Fuente (.ino)](/codigo/detector_distancia.ino)**  
 Script en C++ cargado en la placa Arduino (`distancia.ino`) con comentarios explicativos de la lógica de control.
-* **[Simulación en Tinkercad](/simulacion/)**  
+* **[Simulación en Tinkercad](/simulacion/readme.md)**  
 Esquema del circuito en entorno simulado y enlace interactivo al proyecto de Tinkercad.
 * **[Evidencias Físicas y Video](/fotos/)**  
 Capturas del montaje en laboratorio sobre protoboard y video de verificación del funcionamiento en tiempo real.
