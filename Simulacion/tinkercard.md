@@ -26,7 +26,12 @@ Para validar el funcionamiento del circuito antes del montaje en físico, se rec
 3. **Carga y Verificación del Código:**
    * Se implementó el script en C++ dentro del editor de código de Tinkercad.
    * Se abrió el **Monitor Serial** integrado para observar la salida de datos en centímetros y comprobar que el mensaje de alerta `"OBJETO DETECTADO"` solo se enviara una vez al cruzar el umbral de los $10\text{ cm}$.
+  
 
+
+## Conexiones del Circuito
+
+![Conexiones en Tinkercad](./conexiones.png)
 
 ## Esquema del Circuito
 
