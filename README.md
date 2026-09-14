@@ -10,7 +10,7 @@ Para revisar el código fuente, el circuito interactivo y las evidencias del mon
 
 * **[Código Fuente (.ino)](/Codigo/detector_distancia.ino)**  
 Script en C++ cargado en la placa Arduino (`distancia.ino`) con comentarios explicativos de la lógica de control.
-* **[Simulación en Tinkercad](/Simulacion/readme.md)**  
+* **[Simulación en Tinkercad](/Simulacion/tinkercad.md)**  
 Esquema del circuito en entorno simulado y enlace interactivo al proyecto de Tinkercad.
 * **[Evidencias Físicas y Video](/Fotos/)**  
 Capturas del montaje en laboratorio sobre protoboard y video de verificación del funcionamiento en tiempo real.
